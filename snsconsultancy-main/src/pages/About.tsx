@@ -158,6 +158,7 @@ const About = () => {
         </div>
       </section>
     </div>
+    <Analytics />
   );
 };
 
