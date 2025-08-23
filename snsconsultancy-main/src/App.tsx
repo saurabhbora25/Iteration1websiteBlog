@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react';
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
@@ -89,6 +90,7 @@ const App = () => {
             preSelectedService={bookingModal.selectedService}
             preSelectedCountry={bookingModal.selectedCountry}
           />
+          <Analytics />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
