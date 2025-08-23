@@ -18,6 +18,7 @@ const Index = () => {
       </div>
       <PricingCards />
     </div>
+    <Analytics />
   );
 };
 
