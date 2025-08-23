@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { Calendar, Clock, ArrowRight, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { supabase } from '@/integrations/supabase/client';
-import NewsletterModal from "@/components/modals/NewsletterModal";
+import NewsletterModal from "@/components/NewsletterModal";
 
 interface BlogPost {
   id: string;
