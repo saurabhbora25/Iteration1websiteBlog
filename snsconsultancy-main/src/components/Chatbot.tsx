@@ -436,7 +436,7 @@ index f56f6b96ce5fc722324390ac4aa78bfc1ae25077..90d35cded0eec5a927feea799725d40f
 +  const handleApiKeyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 +    const value = e.target.value;
 +    setApiKey(value);
-+    localStorage.setItem('chatApiKey', value);
++    localStorage.setItem('chatApikey', value);
    };
  
    const handleQuickQuery = (query: string) => {
@@ -479,7 +479,7 @@ index f56f6b96ce5fc722324390ac4aa78bfc1ae25077..90d35cded0eec5a927feea799725d40f
 -        content: response.content,
 -        timestamp: new Date(),
 -        actions: response.actions
-+        content: 'Please enter your API key.',
++        content: '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',
 +        timestamp: new Date()
        };
 +      setMessages(prev => [...prev, botMessage]);
